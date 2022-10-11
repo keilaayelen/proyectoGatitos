@@ -1,0 +1,26 @@
+/* html contacto */
+.contenedorContacto {
+    @extend %flex;
+    background-color: nth($coloresFondo, 1);
+
+    .mainContacto {
+        @extend %flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .h2Contacto {
+            text-align: center;
+        }
+
+        .imgContacto {
+            text-align: center;
+
+            .imgContactoPortada {
+                height: 50%;
+                width: 70%;
+                @include sombra;
+            }
+        }
+    }
+
+}

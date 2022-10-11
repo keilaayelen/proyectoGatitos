@@ -1,0 +1,30 @@
+/* html eden */
+.contenedorEden {
+    @extend %flex;
+    background-color: nth($coloresFondo, 1);
+
+    .headerAdopta {
+        height: 7rem;
+    }
+
+    .mainEden {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .padreTextoEden {
+        @extend %flex;
+        align-items: center;
+
+        .sectionEden {
+            @include parrafos-largos-dos;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}

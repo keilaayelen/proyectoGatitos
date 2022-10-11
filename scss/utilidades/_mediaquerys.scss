@@ -1,0 +1,226 @@
+/* media querys para desktop */
+@media screen and (min-width:800px) {
+
+    // Index
+    .contenedor {
+        display: grid;
+        grid-template-columns: 40fr 40fr;
+        grid-template-rows: 7rem 1px 20rem 7rem 12rem;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main img"
+            "porque porque"
+            "pregunta pregunta"
+            "pregunta pregunta"
+            "pregunta pregunta"
+            "footer footer";
+    }
+
+    article {
+        grid-area: img;
+    }
+
+    .porque {
+        grid-area: porque;
+    }
+
+    h1 {
+        grid-area: h1;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .navbar {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    .pregunta {
+        grid-area: pregunta;
+    }
+
+    .pregunten {
+        grid-area: pregunten;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .subTitulo {
+        text-shadow: 3px 3px 3px rgba(218, 13, 174, 0.493);
+        font-style: bold;
+    }
+
+    .pregunta {
+        .pregunten {
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .preguntenParrafo {
+            text-align: left;
+        }
+    }
+
+    //html Nosotros
+    .mainNosotros {
+        .divFotos {
+            display: none;
+        }
+
+        .sectionPortada {
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+
+            .portada {
+                .imgPortada {
+                    height: 65h;
+                    width: 60vh;
+                    @include sombra;
+                }
+            }
+        }
+    }
+
+    .sectionNosotros {
+        background-color: rgba(78, 54, 54, 0.534);
+
+        .divHistoriaNosotros {
+            display: grid;
+            grid-template-columns: 40fr 40fr;
+            grid-template-rows: 20fr 20fr;
+            grid-template-areas:
+                "div21 div22"
+                "div23 div24";
+
+            .div21 {
+                grid-area: div21;
+            }
+
+            .div22 {
+                grid-area: div22;
+            }
+
+            .div23 {
+                grid-area: div23;
+            }
+
+            .div24 {
+                grid-area: div24;
+            }
+        }
+    }
+
+    //html proyecto eden
+    .contenedorEden {
+        display: grid;
+        grid-template-columns: 30fr;
+        grid-template-rows: 9rem 1px 30rem 8rem;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "video texto"
+            "footer footer";
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .mainEden {
+            grid-area: video;
+            margin-top: 85px;
+            margin-left: 150px;
+        }
+
+        .padreTextoEden {
+            grid-area: texto;
+            margin-right: 280px;
+            margin-top: 12px;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    }
+
+
+    //html ADOPTA 
+    .contenedorAdopta {
+        background-color: nth($coloresFondo, 1);
+
+        .h2Adopta {
+            @include mas-subtitulos;
+        }
+
+        .mainAdopta {
+            .sectionAdopta {
+                display: flex;
+                justify-content: center;
+                height: 80vh;
+                text-align: center;
+                margin-top: 25px;
+            }
+
+            .divAdopta {
+                margin: 10px 15px 10px 15px;
+            }
+
+            .card-img-top {
+                height: 220px;
+                width: 287px;
+            }
+        }
+    }
+
+
+    //html CONTACTO 
+    .contenedorContacto {
+        .mainContacto {
+            .imgContacto {
+                .imgContactoPortada {
+                    height: 20%;
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+}
+
+
+/* media querys para mobile first */
+@media screen and (max-width:799px) {
+
+    //html sobre nosotros
+    .mainNosotros {
+        .imgNosotros3 {
+            display: none;
+        }
+
+        .portada {
+            display: none;
+        }
+    }
+
+    //html proyecto eden
+    .requisitosEden {
+        display: none;
+    }
+
+}

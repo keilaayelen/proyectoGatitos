@@ -1,0 +1,16 @@
+//utilidades
+@import "utilidades/variables";
+@import "utilidades/mixins";
+@import "utilidades/extend";
+@import "utilidades/listas";
+@import "utilidades/reset";
+
+//html
+@import "paginas/index";
+@import "paginas/nosotros";
+@import "paginas/adopta";
+@import "paginas/contacto";
+@import "paginas/eden";
+
+//media querys
+@import "utilidades/mediaquerys";

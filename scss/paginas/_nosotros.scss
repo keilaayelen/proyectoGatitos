@@ -1,0 +1,45 @@
+/* html NOSOTROS */
+
+.contenedorNosotros {
+    @extend %flex;
+    background-color: nth($coloresFondo, 1);
+}
+
+.mainNosotros {
+    margin-top: 0px;
+
+    .subtituloNosotros {
+        @include mas-subtitulos;
+    }
+
+    .sectionPortada {
+        .portada {
+            .imgPortada {
+                margin-top: 1rem;
+                height: 80%;
+                width: 40%;
+            }
+        }
+    }
+
+    .divFotos {
+        text-align: center;
+    }
+}
+
+.sectionNosotros {
+    display: flex;
+    justify-content: center;
+
+    .divHistoriaNosotros {
+        text-align: center;
+        font-size: large;
+
+        .div21,
+        .div22,
+        .div23,
+        .div24 {
+            @include parrafos-largos;
+        }
+    }
+}

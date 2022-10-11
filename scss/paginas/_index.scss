@@ -1,0 +1,144 @@
+/* html INDEX/HOME */
+/* Mobile first */
+.contenedor {
+    @extend %flex;
+    display: block;
+    background-color: nth($coloresFondo, 1);
+}
+
+header,
+footer {
+    background-color: nth($coloresFondo, 2);
+}
+
+/* Titulo y parrafos */
+header {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+
+    h1 {
+        @include subtitulos;
+    }
+
+    nav {
+
+        .navbar-brand,
+        .nav-link,
+        .navbar-toggler {
+            color: nth($coloresFondo , 3);
+        }
+
+        .navbar-toggler {
+            color: nth($coloresFondo, 3);
+            background-color: nth($coloresFondo, 3);
+        }
+    }
+
+    /* Hover en nav */
+    .navbar-toggler:hover {
+        background-color: nth($coloresFondo , 2);
+    }
+}
+
+header nav ul li:hover {
+    background-color: nth($coloresFondo , 2);
+}
+
+header nav div a:hover {
+    background-color: nth($coloresFondo , 2);
+}
+
+/* Subtitulo e imagen principal */
+main {
+    .subTitulo {
+        @include textos;
+        margin-top: 10%;
+        margin-bottom: 0px;
+        font-size: xxx-large;
+    }
+
+    .subTitulo span {
+        display: block;
+    }
+
+}
+
+.contenedor {
+
+    /* imagen principal */
+    article {
+        .divImagenPrincipal {
+            @include sombra;
+            text-align: center;
+            margin-right: 50px;
+        }
+    }
+
+}
+
+/* Textos y parrafos */
+.porque {
+    .inicial {
+        @include textos;
+        margin-bottom: 0px;
+    }
+}
+
+.pregunta {
+    margin-bottom: 0px;
+
+    .pregunten {
+        @include textos;
+    }
+
+    .preguntenParrafo {
+        @include parrafos;
+    }
+}
+
+
+/* footer */
+footer {
+    @extend %flex;
+}
+
+footer {
+    h3 {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding: 0px;
+    }
+
+    .iconosredes {
+        @include iconos;
+        margin-bottom: 15px;
+    }
+
+    .iconosRedesDos,
+    .whatsIcon {
+        padding: 5px;
+    }
+
+    // Keyframes
+    .aModif {
+        animation-name: nombre;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes nombre {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(7px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+}

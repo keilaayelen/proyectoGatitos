@@ -1,0 +1,340 @@
+.contenedor, footer, .contenedorNosotros, .contenedorAdopta, .contenedorContacto, .contenedorContacto .mainContacto, .contenedorEden, .contenedorEden .padreTextoEden {
+  display: flex;
+  flex-direction: column; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh; }
+
+footer {
+  margin-top: 1.3rem; }
+
+/* html INDEX/HOME */
+/* Mobile first */
+.contenedor {
+  display: block;
+  background-color: #fcc7e3dc; }
+
+header,
+footer {
+  background-color: pink; }
+
+/* Titulo y parrafos */
+header {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  /* Hover en nav */ }
+  header h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 3px rgba(218, 13, 174, 0.493);
+    margin: 0px;
+    font-size: xxx-large; }
+  header nav .navbar-brand,
+  header nav .nav-link,
+  header nav .navbar-toggler {
+    color: white; }
+  header nav .navbar-toggler {
+    color: white;
+    background-color: white; }
+  header .navbar-toggler:hover {
+    background-color: pink; }
+
+header nav ul li:hover {
+  background-color: pink; }
+
+header nav div a:hover {
+  background-color: pink; }
+
+/* Subtitulo e imagen principal */
+main .subTitulo {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10%;
+  margin-bottom: 0px;
+  font-size: xxx-large; }
+
+main .subTitulo span {
+  display: block; }
+
+.contenedor {
+  /* imagen principal */ }
+  .contenedor article .divImagenPrincipal {
+    margin-left: 1px;
+    filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.658));
+    text-align: center;
+    margin-right: 50px; }
+
+/* Textos y parrafos */
+.porque .inicial {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 0px; }
+
+.pregunta {
+  margin-bottom: 0px; }
+  .pregunta .pregunten {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; }
+  .pregunta .preguntenParrafo {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold; }
+
+/* footer */
+footer h3 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding: 0px; }
+
+footer .iconosredes {
+  color: #f37623;
+  text-align: center;
+  margin: 5px 5px 15px 5px;
+  padding: 10px;
+  transform: translateY(3px 3px);
+  margin-bottom: 15px; }
+
+footer .iconosRedesDos,
+footer .whatsIcon {
+  padding: 5px; }
+
+footer .aModif {
+  animation-name: nombre;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+@keyframes nombre {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(7px); }
+  100% {
+    transform: translateY(0px); } }
+
+/* html NOSOTROS */
+.contenedorNosotros {
+  background-color: #fcc7e3dc; }
+
+.mainNosotros {
+  margin-top: 0px; }
+  .mainNosotros .subtituloNosotros {
+    text-align: center;
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.781);
+    text-shadow: 2px 2px 5px #f840ac;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+    height: 2.8rem; }
+  .mainNosotros .sectionPortada .portada .imgPortada {
+    margin-top: 1rem;
+    height: 80%;
+    width: 40%; }
+  .mainNosotros .divFotos {
+    text-align: center; }
+
+.sectionNosotros {
+  display: flex;
+  justify-content: center; }
+  .sectionNosotros .divHistoriaNosotros {
+    text-align: center;
+    font-size: large; }
+    .sectionNosotros .divHistoriaNosotros .div21,
+    .sectionNosotros .divHistoriaNosotros .div22,
+    .sectionNosotros .divHistoriaNosotros .div23,
+    .sectionNosotros .divHistoriaNosotros .div24 {
+      background-color: #f3bfe0;
+      color: rgba(0, 0, 0, 0.781);
+      border-radius: 0.5rem;
+      height: 37vh;
+      width: 25rem;
+      text-align: center;
+      margin: 15px 10px 15px 10px;
+      box-shadow: 3px 3px 8px black; }
+
+/* html adopta */
+.contenedorAdopta {
+  background-color: #fcc7e3dc; }
+  .contenedorAdopta .h2Adopta {
+    text-align: center;
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.781);
+    text-shadow: 2px 2px 5px #f840ac;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+    height: 2.8rem; }
+  .contenedorAdopta .mainAdopta {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .contenedorAdopta .mainAdopta .sectionAdopta {
+      text-align: center; }
+      .contenedorAdopta .mainAdopta .sectionAdopta .divAdopta {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+
+/* html contacto */
+.contenedorContacto {
+  background-color: #fcc7e3dc; }
+  .contenedorContacto .mainContacto {
+    align-items: center;
+    margin-top: 20px; }
+    .contenedorContacto .mainContacto .h2Contacto {
+      text-align: center; }
+    .contenedorContacto .mainContacto .imgContacto {
+      text-align: center; }
+      .contenedorContacto .mainContacto .imgContacto .imgContactoPortada {
+        height: 50%;
+        width: 70%;
+        margin-left: 1px;
+        filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.658)); }
+
+/* html eden */
+.contenedorEden {
+  background-color: #fcc7e3dc; }
+  .contenedorEden .headerAdopta {
+    height: 7rem; }
+  .contenedorEden .mainEden {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contenedorEden .padreTextoEden {
+    align-items: center; }
+    .contenedorEden .padreTextoEden .sectionEden {
+      background-color: #f3bfe0;
+      color: rgba(0, 0, 0, 0.781);
+      border-radius: 0.5rem;
+      width: 25rem;
+      text-align: center;
+      margin: 15px 10px 15px 10px;
+      box-shadow: 3px 3px 8px black;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+
+/* media querys para desktop */
+@media screen and (min-width: 800px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 40fr 40fr;
+    grid-template-rows: 7rem 1px 20rem 7rem 12rem;
+    grid-template-areas: "header header" "nav nav" "main img" "porque porque" "pregunta pregunta" "pregunta pregunta" "pregunta pregunta" "footer footer"; }
+  article {
+    grid-area: img; }
+  .porque {
+    grid-area: porque; }
+  h1 {
+    grid-area: h1; }
+  header {
+    grid-area: header; }
+  .navbar {
+    grid-area: nav; }
+  main {
+    grid-area: main; }
+  .pregunta {
+    grid-area: pregunta; }
+  .pregunten {
+    grid-area: pregunten; }
+  section {
+    grid-area: section; }
+  footer {
+    grid-area: footer; }
+  .subTitulo {
+    text-shadow: 3px 3px 3px rgba(218, 13, 174, 0.493);
+    font-style: bold; }
+  .pregunta .pregunten {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace; }
+  .pregunta .preguntenParrafo {
+    text-align: left; }
+  .mainNosotros .divFotos {
+    display: none; }
+  .mainNosotros .sectionPortada {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly; }
+    .mainNosotros .sectionPortada .portada .imgPortada {
+      height: 65h;
+      width: 60vh;
+      margin-left: 1px;
+      filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.658)); }
+  .sectionNosotros {
+    background-color: rgba(78, 54, 54, 0.534); }
+    .sectionNosotros .divHistoriaNosotros {
+      display: grid;
+      grid-template-columns: 40fr 40fr;
+      grid-template-rows: 20fr 20fr;
+      grid-template-areas: "div21 div22" "div23 div24"; }
+      .sectionNosotros .divHistoriaNosotros .div21 {
+        grid-area: div21; }
+      .sectionNosotros .divHistoriaNosotros .div22 {
+        grid-area: div22; }
+      .sectionNosotros .divHistoriaNosotros .div23 {
+        grid-area: div23; }
+      .sectionNosotros .divHistoriaNosotros .div24 {
+        grid-area: div24; }
+  .contenedorEden {
+    display: grid;
+    grid-template-columns: 30fr;
+    grid-template-rows: 9rem 1px 30rem 8rem;
+    grid-template-areas: "header header" "nav nav" "video texto" "footer footer"; }
+    .contenedorEden header {
+      grid-area: header; }
+    .contenedorEden nav {
+      grid-area: nav; }
+    .contenedorEden .mainEden {
+      grid-area: video;
+      margin-top: 85px;
+      margin-left: 150px; }
+    .contenedorEden .padreTextoEden {
+      grid-area: texto;
+      margin-right: 280px;
+      margin-top: 12px; }
+    .contenedorEden footer {
+      grid-area: footer; }
+  .contenedorAdopta {
+    background-color: #fcc7e3dc; }
+    .contenedorAdopta .h2Adopta {
+      text-align: center;
+      background-color: pink;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgba(0, 0, 0, 0.781);
+      text-shadow: 2px 2px 5px #f840ac;
+      margin-top: 2px;
+      margin-bottom: 1rem;
+      height: 2.8rem; }
+    .contenedorAdopta .mainAdopta .sectionAdopta {
+      display: flex;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+      margin-top: 25px; }
+    .contenedorAdopta .mainAdopta .divAdopta {
+      margin: 10px 15px 10px 15px; }
+    .contenedorAdopta .mainAdopta .card-img-top {
+      height: 220px;
+      width: 287px; }
+  .contenedorContacto .mainContacto .imgContacto .imgContactoPortada {
+    height: 20%;
+    width: 40%; } }
+
+/* media querys para mobile first */
+@media screen and (max-width: 799px) {
+  .mainNosotros .imgNosotros3 {
+    display: none; }
+  .mainNosotros .portada {
+    display: none; }
+  .requisitosEden {
+    display: none; } }

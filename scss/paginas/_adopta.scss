@@ -1,0 +1,28 @@
+/* html adopta */
+
+.contenedorAdopta {
+    background-color: nth($coloresFondo, 1);
+    @extend %flex;
+
+    .h2Adopta {
+        @include mas-subtitulos;
+    }
+
+    .mainAdopta {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .sectionAdopta {
+            text-align: center;
+
+            .divAdopta {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
