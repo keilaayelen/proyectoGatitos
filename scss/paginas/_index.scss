@@ -70,7 +70,10 @@ main {
         .divImagenPrincipal {
             @include sombra;
             text-align: center;
-            margin-right: 50px;
+
+            .imagenPrincipal {
+                width: 80%;
+            }
         }
     }
 
